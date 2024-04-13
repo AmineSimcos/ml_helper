@@ -29,7 +29,7 @@ class RegexScreen extends StatelessWidget {
           MyListTile(
             title: "Re Compile",
             onTap: () async {
-              String text = await read("re\\compile.py");
+              String text = await read("re/compile.py");
               Get.to(() => ReadCodeFromFile("Re Compile", text));
             },
           ),

@@ -29,7 +29,7 @@ class KerasScreen extends StatelessWidget {
           MyListTile(
             title: "Sequential NN",
             onTap: () async {
-              String text = await read("keras\\sequentialnn.py");
+              String text = await read("keras/sequentialnn.py");
               Get.to(() => ReadCodeFromFile("keras Sequential NN", text));
             },
           ),

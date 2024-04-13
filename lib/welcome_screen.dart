@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'drawer.dart';
-import 'menuwidget.dart';
+import 'widgets/menuwidget.dart';
 import 'theme/theme_controller.dart';
 
 class WelcomeScreen extends StatelessWidget {

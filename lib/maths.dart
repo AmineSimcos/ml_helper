@@ -29,14 +29,14 @@ class MathsScreen extends StatelessWidget {
           MyListTile(
             title: "Library",
             onTap: () async {
-              String text = await read("maths\\mathlibrary.py");
+              String text = await read("maths/mathlibrary.py");
               Get.to(() => ReadCodeFromFile("Math library", text));
             },
           ),
           MyListTile(
             title: "Operations",
             onTap: () async {
-              String text = await read("maths\\mathoperations.py");
+              String text = await read("maths/mathoperations.py");
               Get.to(() => ReadCodeFromFile("Math Operations", text));
             },
           ),

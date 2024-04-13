@@ -29,7 +29,7 @@ class RandomScreen extends StatelessWidget {
           MyListTile(
             title: "Random Basics",
             onTap: () async {
-              String text = await read("random\\randombasics.py");
+              String text = await read("random/randombasics.py");
               Get.to(() => ReadCodeFromFile("Random Basics", text));
             },
           ),

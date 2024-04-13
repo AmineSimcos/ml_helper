@@ -71,6 +71,21 @@ flutter:
   assets:
     - assets/images/
     - assets/files/
+    - assets/files/date/
+    - assets/files/file/
+    - assets/files/keras/
+    - assets/files/maths/
+    - assets/files/matplotlib/
+    - assets/files/numpy/
+    - assets/files/os/
+    - assets/files/pandas/
+    - assets/files/random/
+    - assets/files/re/
+    - assets/files/scipy/
+    - assets/files/seaborn/
+    - assets/files/sklearn/
+    - assets/files/statistics/
+    - assets/files/tensorflow/
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

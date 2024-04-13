@@ -30,7 +30,7 @@ class MenuWidget extends StatelessWidget {
                 // Colors.amber
               ],
             ),
-            width: 4,
+            width: 2,
           ),
           borderRadius: BorderRadius.circular(15),
         ),

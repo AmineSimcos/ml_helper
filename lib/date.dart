@@ -29,21 +29,21 @@ class DateScreen extends StatelessWidget {
           MyListTile(
             title: "Basics",
             onTap: () async {
-              String text = await read("date\\basics.py");
+              String text = await read("date/basics.py");
               Get.to(() => ReadCodeFromFile("Date Basics", text));
             },
           ),
           MyListTile(
             title: "Calculations",
             onTap: () async {
-              String text = await read("date\\calculations.py");
+              String text = await read("date/calculations.py");
               Get.to(() => ReadCodeFromFile("Date Calculations", text));
             },
           ),
           MyListTile(
             title: "Wait",
             onTap: () async {
-              String text = await read("date\\wait.py");
+              String text = await read("date/wait.py");
               Get.to(() => ReadCodeFromFile("Date Wait", text));
             },
           ),

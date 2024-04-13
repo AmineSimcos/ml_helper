@@ -29,21 +29,21 @@ class OSScreen extends StatelessWidget {
           MyListTile(
             title: "Default Path",
             onTap: () async {
-              String text = await read("os\\defaultpath.py");
+              String text = await read("os/defaultpath.py");
               Get.to(() => ReadCodeFromFile("OS Default Path", text));
             },
           ),
           MyListTile(
             title: "File Exists",
             onTap: () async {
-              String text = await read("os\\fileexist.py");
+              String text = await read("os/fileexist.py");
               Get.to(() => ReadCodeFromFile("OS File Exists", text));
             },
           ),
           MyListTile(
             title: "Make Folder",
             onTap: () async {
-              String text = await read("os\\makefolder.py");
+              String text = await read("os/makefolder.py");
               Get.to(() => ReadCodeFromFile("OS Make Folder", text));
             },
           ),

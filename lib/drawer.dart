@@ -31,7 +31,7 @@ class _MyDrawerState extends State<MyDrawer> {
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisSize: MainAxisSize.max,
             children: [
-              SizedBox(height: 36),
+              const SizedBox(height: 36),
               Row(
                 children: [
                   Image.asset(
@@ -55,12 +55,15 @@ class _MyDrawerState extends State<MyDrawer> {
               ),
               const SizedBox(height: 10),
               const Text(
-                "An Application showcasing Flutter comonents, with side-by-side source code view.",
+                "An application that showcases the most important and commonly used libraries in the field of machine learning, along with Python source code.",
                 style: TextStyle(fontSize: 12),
               ),
               // SizedBox(height: 20),
               const Spacer(),
-              const Text('Developed by B.Med Amine.'),
+              const Text(
+                'Developed by ARTVison',
+                style: TextStyle(fontSize: 13),
+              ),
             ],
           ),
         ),
@@ -115,9 +118,8 @@ class _MyDrawerState extends State<MyDrawer> {
                 title: const Text('Share'),
                 onTap: () async {
                   Get.back();
-                  final result =
-                      await Share.shareWithResult('App URL : "www.app.com');
-
+                  final result = await Share.shareWithResult(
+                      'App URL : https://github.com/AmineSimcos/ml_helper');
                   if (result.status == ShareResultStatus.success) {
                     print('Thank you for sharing my website!');
                   }

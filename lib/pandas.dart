@@ -28,112 +28,112 @@ class PandasScreen extends StatelessWidget {
           MyListTile(
             title: "DataFrame 1",
             onTap: () async {
-              String text = await read("statistics\\statistics.py");
+              String text = await read("statistics/statistics.py");
               Get.to(() => ReadCodeFromFile("Statistics Library", text));
             },
           ),
           MyListTile(
             title: "DataFrame 2",
             onTap: () async {
-              String text = await read("statistics\\statistics.py");
+              String text = await read("statistics/statistics.py");
               Get.to(() => ReadCodeFromFile("Statistics Library", text));
             },
           ),
           MyListTile(
             title: "DataFrame Drop",
             onTap: () async {
-              String text = await read("statistics\\statistics.py");
+              String text = await read("statistics/statistics.py");
               Get.to(() => ReadCodeFromFile("Statistics Library", text));
             },
           ),
           MyListTile(
             title: "DataFrame Groupby",
             onTap: () async {
-              String text = await read("statistics\\statistics.py");
+              String text = await read("statistics/statistics.py");
               Get.to(() => ReadCodeFromFile("Statistics Library", text));
             },
           ),
           MyListTile(
             title: "DataFrame Insert",
             onTap: () async {
-              String text = await read("statistics\\statistics.py");
+              String text = await read("statistics/statistics.py");
               Get.to(() => ReadCodeFromFile("Statistics Library", text));
             },
           ),
           MyListTile(
             title: "DataFrame Merge Tables",
             onTap: () async {
-              String text = await read("statistics\\statistics.py");
+              String text = await read("statistics/statistics.py");
               Get.to(() => ReadCodeFromFile("Statistics Library", text));
             },
           ),
           MyListTile(
             title: "DataFrame MultiIndex",
             onTap: () async {
-              String text = await read("statistics\\statistics.py");
+              String text = await read("statistics/statistics.py");
               Get.to(() => ReadCodeFromFile("Statistics Library", text));
             },
           ),
           MyListTile(
             title: "DataFrame Statistics",
             onTap: () async {
-              String text = await read("statistics\\statistics.py");
+              String text = await read("statistics/statistics.py");
               Get.to(() => ReadCodeFromFile("Statistics Library", text));
             },
           ),
           MyListTile(
             title: "DateTime",
             onTap: () async {
-              String text = await read("statistics\\statistics.py");
+              String text = await read("statistics/statistics.py");
               Get.to(() => ReadCodeFromFile("Statistics Library", text));
             },
           ),
           MyListTile(
             title: "GetDummies",
             onTap: () async {
-              String text = await read("statistics\\statistics.py");
+              String text = await read("statistics/statistics.py");
               Get.to(() => ReadCodeFromFile("Statistics Library", text));
             },
           ),
           MyListTile(
             title: "Index",
             onTap: () async {
-              String text = await read("statistics\\statistics.py");
+              String text = await read("statistics/statistics.py");
               Get.to(() => ReadCodeFromFile("Statistics Library", text));
             },
           ),
           MyListTile(
             title: "Plot",
             onTap: () async {
-              String text = await read("statistics\\statistics.py");
+              String text = await read("statistics/statistics.py");
               Get.to(() => ReadCodeFromFile("Statistics Library", text));
             },
           ),
           MyListTile(
             title: "Read Files",
             onTap: () async {
-              String text = await read("statistics\\statistics.py");
+              String text = await read("statistics/statistics.py");
               Get.to(() => ReadCodeFromFile("Statistics Library", text));
             },
           ),
           MyListTile(
             title: "Reset Index",
             onTap: () async {
-              String text = await read("statistics\\statistics.py");
+              String text = await read("statistics/statistics.py");
               Get.to(() => ReadCodeFromFile("Statistics Library", text));
             },
           ),
           MyListTile(
             title: "Series",
             onTap: () async {
-              String text = await read("statistics\\statistics.py");
+              String text = await read("statistics/statistics.py");
               Get.to(() => ReadCodeFromFile("Statistics Library", text));
             },
           ),
           MyListTile(
             title: "Series index",
             onTap: () async {
-              String text = await read("statistics\\statistics.py");
+              String text = await read("statistics/statistics.py");
               Get.to(() => ReadCodeFromFile("Statistics Library", text));
             },
           ),

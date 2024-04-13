@@ -29,7 +29,7 @@ class StatisticsScreen extends StatelessWidget {
           MyListTile(
             title: "Statistics Library",
             onTap: () async {
-              String text = await read("statistics\\statistics.py");
+              String text = await read("statistics/statistics.py");
               Get.to(() => ReadCodeFromFile("Statistics Library", text));
             },
           ),

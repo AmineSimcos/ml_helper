@@ -29,49 +29,49 @@ class ScipyScreen extends StatelessWidget {
           MyListTile(
             title: "Basinhopping",
             onTap: () async {
-              String text = await read("scipy\\basinhopping.py");
+              String text = await read("scipy/basinhopping.py");
               Get.to(() => ReadCodeFromFile("Scipy Basinhopping", text));
             },
           ),
           MyListTile(
             title: "CurveFit",
             onTap: () async {
-              String text = await read("scipy\\curvefit.py");
+              String text = await read("scipy/curvefit.py");
               Get.to(() => ReadCodeFromFile("Scipy Curve_fit", text));
             },
           ),
           MyListTile(
             title: "Fmin bfgs",
             onTap: () async {
-              String text = await read("scipy\\fminbfgs.py");
+              String text = await read("scipy/fminbfgs.py");
               Get.to(() => ReadCodeFromFile("Scipy Fmin bfgs", text));
             },
           ),
           MyListTile(
             title: "Fmin bounds",
             onTap: () async {
-              String text = await read("scipy\\fminbounds.py");
+              String text = await read("scipy/fminbounds.py");
               Get.to(() => ReadCodeFromFile("Scipy Fmin bounds", text));
             },
           ),
           MyListTile(
             title: "Fslove",
             onTap: () async {
-              String text = await read("scipy\\fslove.py");
+              String text = await read("scipy/fslove.py");
               Get.to(() => ReadCodeFromFile("Scipy Fslove", text));
             },
           ),
           MyListTile(
             title: "Loadmat",
             onTap: () async {
-              String text = await read("scipy\\loadmat.py");
+              String text = await read("scipy/loadmat.py");
               Get.to(() => ReadCodeFromFile("Scipy Loadmat", text));
             },
           ),
           MyListTile(
             title: "Probplot",
             onTap: () async {
-              String text = await read("scipy\\probplot.py");
+              String text = await read("scipy/probplot.py");
               Get.to(() => ReadCodeFromFile("Scipy Probplot", text));
             },
           ),
