@@ -1,0 +1,104 @@
+import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:gradient_borders/gradient_borders.dart';
+import 'drawer.dart';
+import 'theme/theme_controller.dart';
+
+class WelcomeScreen extends StatelessWidget {
+  WelcomeScreen({super.key});
+  final MyThemeController myThemeController  = Get.put(MyThemeController());
+
+  final List menu = [
+    {'title': 'Scipy', 'img': 'assets/images/scipy.png'},
+    {'title': 'Matplotlib', 'img': 'assets/images/matplotlib.png'},
+    {'title': 'Tensorflow', 'img': 'assets/images/tensorflow.png'},
+    {'title': 'Numpy', 'img': 'assets/images/numpy.png'},
+    {'title': 'Pandas', 'img': 'assets/images/pandas.png'},
+    {'title': 'Sklearn', 'img': 'assets/images/sklearn.png'},
+    {'title': 'Seaborn', 'img': 'assets/images/seaborn.png'},
+    {'title': 'Keras', 'img': 'assets/images/keras.png'},
+    {'title': 'OS', 'img': 'assets/images/os.png'},
+    {'title': 'Maths', 'img': 'assets/images/maths.png'},
+    {'title': 'Statistics', 'img': 'assets/images/statistic.png'},
+    {'title': 'Random', 'img': 'assets/images/random.png'},
+    {'title': 'Date', 'img': 'assets/images/date.png'},
+    {'title': 'Re', 'img': 'assets/images/regex.png'},
+    {'title': 'File', 'img': 'assets/images/file.png'},
+  ];
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text("ML Helper"),
+      ),
+      body: GridView.builder(
+        padding: const EdgeInsets.all(8),
+        itemCount: menu.length,
+        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount: 2,
+          mainAxisSpacing: 8.0,
+          crossAxisSpacing: 8.0,
+        ),
+        itemBuilder: (BuildContext context, int index) {
+          return MenuWidget(menu: menu[index]);
+        },
+      ),
+      drawer: const Drawer(
+        child: MyDrawer(),
+      ),
+    );
+  }
+}
+
+class MenuWidget extends StatelessWidget {
+  final Map menu;
+  const MenuWidget({
+    super.key,
+    required this.menu,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return InkWell(
+      onTap: () {
+        Get.toNamed(menu['title']);
+      },
+      child: Container(
+        padding: const EdgeInsets.all(8.0),
+        decoration: BoxDecoration(
+          // color: Colors.white,
+          border: const GradientBoxBorder(
+            gradient: LinearGradient(
+              colors: [
+                Colors.cyan,
+                Colors.deepPurple,
+                Colors.pink,
+                Colors.redAccent,
+                // Colors.amber
+              ],
+            ),
+            width: 4,
+          ),
+          borderRadius: BorderRadius.circular(15),
+        ),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Flexible(
+              child: Image.asset(
+                menu['img'],
+                // width: 90,
+              ),
+            ),
+            const SizedBox(height: 8),
+            Text(
+              menu['title'],
+              style: const TextStyle(fontSize: 16),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
