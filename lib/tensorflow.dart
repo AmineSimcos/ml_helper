@@ -1,5 +1,7 @@
-import 'package:flutter/material.dart';
-import 'package:gradient_borders/gradient_borders.dart';
+import 'package:flutter/material.dart';import 'package:get/get.dart';
+import 'functions.dart';
+import 'readcodefromfile.dart';
+import 'widgets/mylisttile.dart';
 
 class TensorflowScreen extends StatelessWidget {
   const TensorflowScreen({super.key});
@@ -22,81 +24,119 @@ class TensorflowScreen extends StatelessWidget {
       ),
       body: ListView(
         padding: const EdgeInsets.all(8),
-        children: const [
-          MyListTile(title: "Constant"),
-          MyListTile(title: "Data - Boston"),
-          MyListTile(title: "Data - Cifar 10"),
-          MyListTile(title: "Data - Cifar 100"),
-          MyListTile(title: "Data - Fashion"),
-          MyListTile(title: "Data - IMDB"),
-          MyListTile(title: "Data - Mnist"),
-          MyListTile(title: "Data - Reuters"),
-          MyListTile(title: "Eager Execution"),
-          MyListTile(title: "Graph"),
-          MyListTile(title: "Operations"),
-          MyListTile(title: "Place Holder"),
-          MyListTile(title: "Sesssion"),
-          MyListTile(title: "Variable"),
+        children:  [
+          MyListTile(title: "Constant",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },),
+          MyListTile(title: "Data - Boston",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },),
+          MyListTile(title: "Data - Cifar 10",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },),
+          MyListTile(title: "Data - Cifar 100",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },),
+          MyListTile(title: "Data - Fashion",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },),
+          MyListTile(title: "Data - IMDB",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },),
+          MyListTile(title: "Data - Mnist",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },),
+          MyListTile(title: "Data - Reuters",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },),
+          MyListTile(title: "Eager Execution",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },),
+          MyListTile(title: "Graph",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },),
+          MyListTile(title: "Operations",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },),
+          MyListTile(title: "Place Holder",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },),
+          MyListTile(title: "Sesssion",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },),
+          MyListTile(title: "Variable",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },),
           ///////////////////////////////////
-          MyListTile(title: "Feature Column"),
-          MyListTile(title: "GDO"),
-          MyListTile(title: "Input Function"),
-          MyListTile(title: "TF DNN Classifier"),
-          MyListTile(title: "TF DNN Regressor"),
-          MyListTile(title: "TF GBDTC"),
-          MyListTile(title: "TF Linear Classifier"),
-          MyListTile(title: "TF Linear Regressor"),
+          MyListTile(title: "Feature Column",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },),
+          MyListTile(title: "GDO",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },),
+          MyListTile(title: "Input Function",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },),
+          MyListTile(title: "TF DNN Classifier",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },),
+          MyListTile(title: "TF DNN Regressor",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },),
+          MyListTile(title: "TF GBDTC",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },),
+          MyListTile(title: "TF Linear Classifier",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },),
+          MyListTile(title: "TF Linear Regressor",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },),
         ],
-      ),
-    );
-  }
-}
-
-class MyListTile extends StatelessWidget {
-  final void Function()? onTap;
-  final String? title;
-  const MyListTile({
-    super.key,
-    this.onTap,
-    this.title,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      margin: const EdgeInsets.only(bottom: 8),
-      decoration: BoxDecoration(
-        border: const GradientBoxBorder(
-          gradient: LinearGradient(
-            colors: [
-              Colors.cyan,
-              Colors.deepPurple,
-              Colors.pink,
-              Colors.redAccent,
-              // Colors.amber
-            ],
-          ),
-          width: 2,
-        ),
-        borderRadius: BorderRadius.circular(8),
-      ),
-      child: ListTile(
-        onTap: onTap,
-        title: Text(title!),
-        trailing: ShaderMask(
-          blendMode: BlendMode.srcIn,
-          shaderCallback: (Rect bounds) => const RadialGradient(
-            center: Alignment.topCenter,
-            stops: [.5, 1],
-            colors: [
-              Colors.pink,
-              Colors.yellow,
-            ],
-          ).createShader(bounds),
-          child: const Icon(
-            Icons.arrow_forward_ios_rounded,
-          ),
-        ),
       ),
     );
   }

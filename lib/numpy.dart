@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:gradient_borders/gradient_borders.dart';
+import 'package:get/get.dart';
+import 'functions.dart';
+import 'readcodefromfile.dart';
+import 'widgets/mylisttile.dart';
 
 class NumpyScreen extends StatelessWidget {
   const NumpyScreen({super.key});
@@ -22,71 +25,99 @@ class NumpyScreen extends StatelessWidget {
       ),
       body: ListView(
         padding: const EdgeInsets.all(8),
-        children: const [
-          MyListTile(title: "Arrays"),
-          MyListTile(title: "Arrays Count"),
-          MyListTile(title: "Arrays Numbers"),
-          MyListTile(title: "Arrays Operations"),
-          MyListTile(title: "Astype"),
-          MyListTile(title: "Date"),
-          MyListTile(title: "Degrees"),
-          MyListTile(title: "FromFunction"),
-          MyListTile(title: "Math"),
-          MyListTile(title: "Open File"),
-          MyListTile(title: "Polynomial"),
-          MyListTile(title: "Random"),
-          MyListTile(title: "Where"),
+        children: [
+          MyListTile(
+            title: "Arrays",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },
+          ),
+          MyListTile(
+            title: "Arrays Count",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },
+          ),
+          MyListTile(
+            title: "Arrays Numbers",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },
+          ),
+          MyListTile(
+            title: "Arrays Operations",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },
+          ),
+          MyListTile(
+            title: "Astype",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },
+          ),
+          MyListTile(
+            title: "Date",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },
+          ),
+          MyListTile(
+            title: "Degrees",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },
+          ),
+          MyListTile(
+            title: "FromFunction",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },
+          ),
+          MyListTile(
+            title: "Math",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },
+          ),
+          MyListTile(
+            title: "Open File",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },
+          ),
+          MyListTile(
+            title: "Polynomial",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },
+          ),
+          MyListTile(
+            title: "Random",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },
+          ),
+          MyListTile(
+            title: "Where",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },
+          ),
         ],
-      ),
-    );
-  }
-}
-
-class MyListTile extends StatelessWidget {
-  final void Function()? onTap;
-  final String? title;
-  const MyListTile({
-    super.key,
-    this.onTap,
-    this.title,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      margin: const EdgeInsets.only(bottom: 8),
-      decoration: BoxDecoration(
-        border: const GradientBoxBorder(
-          gradient: LinearGradient(
-            colors: [
-              Colors.cyan,
-              Colors.deepPurple,
-              Colors.pink,
-              Colors.redAccent,
-              // Colors.amber
-            ],
-          ),
-          width: 2,
-        ),
-        borderRadius: BorderRadius.circular(8),
-      ),
-      child: ListTile(
-        onTap: onTap,
-        title: Text(title!),
-        trailing: ShaderMask(
-          blendMode: BlendMode.srcIn,
-          shaderCallback: (Rect bounds) => const RadialGradient(
-            center: Alignment.topCenter,
-            stops: [.5, 1],
-            colors: [
-              Colors.pink,
-              Colors.yellow,
-            ],
-          ).createShader(bounds),
-          child: const Icon(
-            Icons.arrow_forward_ios_rounded,
-          ),
-        ),
       ),
     );
   }

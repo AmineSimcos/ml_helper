@@ -1,5 +1,7 @@
-import 'package:flutter/material.dart';
-import 'package:gradient_borders/gradient_borders.dart';
+import 'package:flutter/material.dart';import 'package:get/get.dart';
+import 'functions.dart';
+import 'readcodefromfile.dart';
+import 'widgets/mylisttile.dart';
 
 class MatplotlibScreen extends StatelessWidget {
   const MatplotlibScreen({super.key});
@@ -22,84 +24,138 @@ class MatplotlibScreen extends StatelessWidget {
       ),
       body: ListView(
         padding: const EdgeInsets.all(8),
-        children: const [
-          MyListTile(title: "3D"),
-          MyListTile(title: "3D Contour"),
-          MyListTile(title: "3D Projection Plot"),
-          MyListTile(title: "3D Scatter"),
-          MyListTile(title: "3D Trisurf"),
-          MyListTile(title: "3D Wire Frame"),
-          MyListTile(title: "Annotate"),
-          MyListTile(title: "Bar"),
-          MyListTile(title: "Contour"),
-          MyListTile(title: "Hexbin"),
-          MyListTile(title: "Hist"),
-          MyListTile(title: "Hist2D"),
-          MyListTile(title: "Images"),
-          MyListTile(title: "Imshow"),
-          MyListTile(title: "Legend"),
-          MyListTile(title: "Limits"),
-          MyListTile(title: "Lines"),
-          MyListTile(title: "Patches"),
-          MyListTile(title: "Pie"),
-          MyListTile(title: "Plot 1"),
-          MyListTile(title: "Plot 2"),
-          MyListTile(title: "Save"),
-          MyListTile(title: "Scatter"),
-          MyListTile(title: "Style"),
-          MyListTile(title: "Subplot"),
-          MyListTile(title: "Ticks"),
+        children:  [
+          MyListTile(title: "3D",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },),
+          MyListTile(title: "3D Contour",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },),
+          MyListTile(title: "3D Projection Plot",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },),
+          MyListTile(title: "3D Scatter",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },),
+          MyListTile(title: "3D Trisurf",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },),
+          MyListTile(title: "3D Wire Frame",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },),
+          MyListTile(title: "Annotate",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },),
+          MyListTile(title: "Bar",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },),
+          MyListTile(title: "Contour",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },),
+          MyListTile(title: "Hexbin",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },),
+          MyListTile(title: "Hist",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },),
+          MyListTile(title: "Hist2D",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },),
+          MyListTile(title: "Images",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },),
+          MyListTile(title: "Imshow",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },),
+          MyListTile(title: "Legend",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },),
+          MyListTile(title: "Limits",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },),
+          MyListTile(title: "Lines",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },),
+          MyListTile(title: "Patches",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },),
+          MyListTile(title: "Pie",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },),
+          MyListTile(title: "Plot 1",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },),
+          MyListTile(title: "Plot 2",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },),
+          MyListTile(title: "Save",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },),
+          MyListTile(title: "Scatter",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },),
+          MyListTile(title: "Style",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },),
+          MyListTile(title: "Subplot",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },),
+          MyListTile(title: "Ticks",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },),
         ],
-      ),
-    );
-  }
-}
-
-class MyListTile extends StatelessWidget {
-  final void Function()? onTap;
-  final String? title;
-  const MyListTile({
-    super.key,
-    this.onTap,
-    this.title,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      margin: const EdgeInsets.only(bottom: 8),
-      decoration: BoxDecoration(
-        border: const GradientBoxBorder(
-          gradient: LinearGradient(
-            colors: [
-              Colors.cyan,
-              Colors.deepPurple,
-              Colors.pink,
-              Colors.redAccent,
-              // Colors.amber
-            ],
-          ),
-          width: 2,
-        ),
-        borderRadius: BorderRadius.circular(8),
-      ),
-      child: ListTile(
-        onTap: onTap,
-        title: Text(title!),
-        trailing: ShaderMask(
-          blendMode: BlendMode.srcIn,
-          shaderCallback: (Rect bounds) => const RadialGradient(
-            center: Alignment.topCenter,
-            stops: [.5, 1],
-            colors: [
-              Colors.pink,
-              Colors.yellow,
-            ],
-          ).createShader(bounds),
-          child: const Icon(
-            Icons.arrow_forward_ios_rounded,
-          ),
-        ),
       ),
     );
   }

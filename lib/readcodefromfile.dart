@@ -1,15 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_code_editor/flutter_code_editor.dart';
 import 'package:flutter_highlight/themes/monokai-sublime.dart';
-import 'package:flutter_highlight/themes/a11y-dark.dart';
-import 'package:flutter_highlight/themes/xcode.dart';
-import 'package:flutter_highlight/themes/dracula.dart';
+// import 'package:flutter_highlight/themes/a11y-dark.dart';
+// import 'package:flutter_highlight/themes/xcode.dart';
+// import 'package:flutter_highlight/themes/dracula.dart';
 import 'package:get/get.dart';
 import 'package:highlight/languages/python.dart';
-import 'package:path_provider/path_provider.dart';
-import 'dart:io';
+// import 'package:path_provider/path_provider.dart';
+// import 'dart:io';
 import 'package:share_plus/share_plus.dart';
-import 'package:eva_icons_flutter/eva_icons_flutter.dart';
 import 'package:flutter/services.dart';
 
 class ReadCodeFromFile extends StatelessWidget {

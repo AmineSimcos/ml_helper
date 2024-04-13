@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:gradient_borders/gradient_borders.dart';
+import 'package:get/get.dart';
+import 'functions.dart';
+import 'readcodefromfile.dart';
+import 'widgets/mylisttile.dart';
 
 class SklearnScreen extends StatelessWidget {
   const SklearnScreen({super.key});
@@ -22,141 +25,559 @@ class SklearnScreen extends StatelessWidget {
       ),
       body: ListView(
         padding: const EdgeInsets.all(8),
-        children: const [
+        children: [
           // 04 Sklearn Preprocessing
-          MyListTile(title: "Model Selection KFold"),
-          MyListTile(title: "Model Selection LeaveOneOut"),
-          MyListTile(title: "Model Selection LeavePOut"),
-          MyListTile(title: "Model Selection RepeatedKFold"),
-          MyListTile(title: "Model Selection RepeatedStratifiedKFold"),
-          MyListTile(title: "Model Selection ShuffleSplit"),
-          MyListTile(title: "Model Selection StratifiedKFold"),
-          MyListTile(title: "Model Selection StratifiedShuffleSplit"),
-          MyListTile(title: "Model Selection TimeSeriesSplit"),
-          MyListTile(title: "Model Selection Train Test Split"),
-          MyListTile(title: "Preprocessing Binarizer"),
-          MyListTile(title: "Preprocessing FunctionTransformer"),
-          MyListTile(title: "Preprocessing LabelEncoder"),
-          MyListTile(title: "Preprocessing MaxAbsScaler"),
-          MyListTile(title: "Preprocessing MinMaxScaler"),
-          MyListTile(title: "Preprocessing Normalizer"),
-          MyListTile(title: "Preprocessing OneHotEncoder"),
-          MyListTile(title: "Preprocessing PolynomialFeatures"),
-          MyListTile(title: "Preprocessing StandardScaler"),
+          MyListTile(
+            title: "Model Selection KFold",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },
+          ),
+          MyListTile(
+            title: "Model Selection LeaveOneOut",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },
+          ),
+          MyListTile(
+            title: "Model Selection LeavePOut",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },
+          ),
+          MyListTile(
+            title: "Model Selection RepeatedKFold",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },
+          ),
+          MyListTile(
+            title: "Model Selection RepeatedStratifiedKFold",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },
+          ),
+          MyListTile(
+            title: "Model Selection ShuffleSplit",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },
+          ),
+          MyListTile(
+            title: "Model Selection StratifiedKFold",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },
+          ),
+          MyListTile(
+            title: "Model Selection StratifiedShuffleSplit",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },
+          ),
+          MyListTile(
+            title: "Model Selection TimeSeriesSplit",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },
+          ),
+          MyListTile(
+            title: "Model Selection Train Test Split",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },
+          ),
+          MyListTile(
+            title: "Preprocessing Binarizer",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },
+          ),
+          MyListTile(
+            title: "Preprocessing FunctionTransformer",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },
+          ),
+          MyListTile(
+            title: "Preprocessing LabelEncoder",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },
+          ),
+          MyListTile(
+            title: "Preprocessing MaxAbsScaler",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },
+          ),
+          MyListTile(
+            title: "Preprocessing MinMaxScaler",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },
+          ),
+          MyListTile(
+            title: "Preprocessing Normalizer",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },
+          ),
+          MyListTile(
+            title: "Preprocessing OneHotEncoder",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },
+          ),
+          MyListTile(
+            title: "Preprocessing PolynomialFeatures",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },
+          ),
+          MyListTile(
+            title: "Preprocessing StandardScaler",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },
+          ),
           // 05 Sklearn Features
-          MyListTile(title: "Data"),
-          MyListTile(title: "Data Cleaning Imputer"),
-          MyListTile(title: "Feature Selection GenericUnivariateSelect"),
-          MyListTile(title: "Feature Selection SelectFromModel"),
-          MyListTile(title: "Feature Selection SelectKBest"),
-          MyListTile(title: "Feature Selection SelectPercentile"),
+          MyListTile(
+            title: "Data",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },
+          ),
+          MyListTile(
+            title: "Data Cleaning Imputer",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },
+          ),
+          MyListTile(
+            title: "Feature Selection GenericUnivariateSelect",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },
+          ),
+          MyListTile(
+            title: "Feature Selection SelectFromModel",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },
+          ),
+          MyListTile(
+            title: "Feature Selection SelectKBest",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },
+          ),
+          MyListTile(
+            title: "Feature Selection SelectPercentile",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },
+          ),
           MyListTile(title: "Version"),
           // 06 Sklearn Models
-          MyListTile(title: "Cluster AgglomerativeClustering"),
-          MyListTile(title: "Cluster DBSCAN"),
-          MyListTile(title: "Cluster KMeans"),
-          MyListTile(title: "Cluster MiniBatchKMeans"),
-          MyListTile(title: "Decomposition PCA"),
-          MyListTile(title: "Decomposition SVD"),
-          MyListTile(title: "Discriminant Analysis LDA"),
-          MyListTile(title: "Discriminant Analysis QDA"),
-          MyListTile(title: "Ensemble GradientBoostingClassifier"),
-          MyListTile(title: "Ensemble GradientBoostingRegressor"),
-          MyListTile(title: "Ensemble RandomForestClassifier"),
-          MyListTile(title: "Ensemble RandomForestRegressor"),
-          MyListTile(title: "Ensemble VotingClassifier"),
-          MyListTile(title: "Externals joblib"),
-          MyListTile(title: "Feature Extraction CountVectorizer"),
-          MyListTile(title: "Linear Model Lasso"),
-          MyListTile(title: "Linear Model LinearRegression"),
-          MyListTile(title: "Linear Model LogisticRegression"),
-          MyListTile(title: "Linear Model Ridge"),
-          MyListTile(title: "Linear Model SGDClassifier"),
-          MyListTile(title: "Linear Model SGDRegressor"),
-          MyListTile(title: "Naive Bayes BernoulliNB"),
-          MyListTile(title: "Naive Bayes GaussianNB"),
-          MyListTile(title: "Naive Bayes MultinomialNB"),
-          MyListTile(title: "Neighbors KNeighborsClassifier"),
-          MyListTile(title: "Neighbors KNeighborsRegressor"),
-          MyListTile(title: "Neighbors NearestNeighbors"),
-          MyListTile(title: "Neural Network MLPClassifier"),
-          MyListTile(title: "Neural Network MLPRegressor"),
-          MyListTile(title: "svm SVC"),
-          MyListTile(title: "svm SVR"),
-          MyListTile(title: "Tree DecisionTreeClassifier"),
-          MyListTile(title: "Tree DecisionTreeRegressor"),
+          MyListTile(
+            title: "Cluster AgglomerativeClustering",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },
+          ),
+          MyListTile(
+            title: "Cluster DBSCAN",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },
+          ),
+          MyListTile(
+            title: "Cluster KMeans",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },
+          ),
+          MyListTile(
+            title: "Cluster MiniBatchKMeans",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },
+          ),
+          MyListTile(
+            title: "Decomposition PCA",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },
+          ),
+          MyListTile(
+            title: "Decomposition SVD",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },
+          ),
+          MyListTile(
+            title: "Discriminant Analysis LDA",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },
+          ),
+          MyListTile(
+            title: "Discriminant Analysis QDA",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },
+          ),
+          MyListTile(
+            title: "Ensemble GradientBoostingClassifier",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },
+          ),
+          MyListTile(
+            title: "Ensemble GradientBoostingRegressor",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },
+          ),
+          MyListTile(
+            title: "Ensemble RandomForestClassifier",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },
+          ),
+          MyListTile(
+            title: "Ensemble RandomForestRegressor",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },
+          ),
+          MyListTile(
+            title: "Ensemble VotingClassifier",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },
+          ),
+          MyListTile(
+            title: "Externals joblib",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },
+          ),
+          MyListTile(
+            title: "Feature Extraction CountVectorizer",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },
+          ),
+          MyListTile(
+            title: "Linear Model Lasso",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },
+          ),
+          MyListTile(
+            title: "Linear Model LinearRegression",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },
+          ),
+          MyListTile(
+            title: "Linear Model LogisticRegression",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },
+          ),
+          MyListTile(
+            title: "Linear Model Ridge",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },
+          ),
+          MyListTile(
+            title: "Linear Model SGDClassifier",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },
+          ),
+          MyListTile(
+            title: "Linear Model SGDRegressor",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },
+          ),
+          MyListTile(
+            title: "Naive Bayes BernoulliNB",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },
+          ),
+          MyListTile(
+            title: "Naive Bayes GaussianNB",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },
+          ),
+          MyListTile(
+            title: "Naive Bayes MultinomialNB",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },
+          ),
+          MyListTile(
+            title: "Neighbors KNeighborsClassifier",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },
+          ),
+          MyListTile(
+            title: "Neighbors KNeighborsRegressor",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },
+          ),
+          MyListTile(
+            title: "Neighbors NearestNeighbors",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },
+          ),
+          MyListTile(
+            title: "Neural Network MLPClassifier",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },
+          ),
+          MyListTile(
+            title: "Neural Network MLPRegressor",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },
+          ),
+          MyListTile(
+            title: "svm SVC",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },
+          ),
+          MyListTile(
+            title: "svm SVR",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },
+          ),
+          MyListTile(
+            title: "Tree DecisionTreeClassifier",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },
+          ),
+          MyListTile(
+            title: "Tree DecisionTreeRegressor",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },
+          ),
           // 07 Sklearn Check
-          MyListTile(title: "Metrics accuracy_score"),
-          MyListTile(title: "Metrics auc"),
-          MyListTile(title: "Metrics classification_report"),
-          MyListTile(title: "Metrics confusion_matrix"),
-          MyListTile(title: "Metrics f1_score"),
-          MyListTile(title: "Metrics mean_absolute_error"),
-          MyListTile(title: "Metrics mean_squared_error"),
-          MyListTile(title: "Metrics median_absolute_error"),
-          MyListTile(title: "Metrics precision_recall_curve"),
-          MyListTile(title: "Metrics precision_recall_fscore_support"),
-          MyListTile(title: "Metrics precision_score"),
-          MyListTile(title: "Metrics roc_auc_score"),
-          MyListTile(title: "Metrics roc_curve"),
-          MyListTile(title: "Metrics zero_one_loss"),
-          MyListTile(title: "Model Selection Cross Val Predict"),
-          MyListTile(title: "Model Selection Cross Val Score"),
-          MyListTile(title: "Model Selection Cross Validate"),
-          MyListTile(title: "Model Selection GridSearchCV"),
-          MyListTile(title: "Model Selection RandomizedSearchCV"),
-          MyListTile(title: "Pipeline"),
+          MyListTile(
+            title: "Metrics accuracy_score",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },
+          ),
+          MyListTile(
+            title: "Metrics auc",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },
+          ),
+          MyListTile(
+            title: "Metrics classification_report",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },
+          ),
+          MyListTile(
+            title: "Metrics confusion_matrix",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },
+          ),
+          MyListTile(
+            title: "Metrics f1_score",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },
+          ),
+          MyListTile(
+            title: "Metrics mean_absolute_error",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },
+          ),
+          MyListTile(
+            title: "Metrics mean_squared_error",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },
+          ),
+          MyListTile(
+            title: "Metrics median_absolute_error",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },
+          ),
+          MyListTile(
+            title: "Metrics precision_recall_curve",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },
+          ),
+          MyListTile(
+            title: "Metrics precision_recall_fscore_support",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },
+          ),
+          MyListTile(
+            title: "Metrics precision_score",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },
+          ),
+          MyListTile(
+            title: "Metrics roc_auc_score",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },
+          ),
+          MyListTile(
+            title: "Metrics roc_curve",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },
+          ),
+          MyListTile(
+            title: "Metrics zero_one_loss",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },
+          ),
+          MyListTile(
+            title: "Model Selection Cross Val Predict",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },
+          ),
+          MyListTile(
+            title: "Model Selection Cross Val Score",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },
+          ),
+          MyListTile(
+            title: "Model Selection Cross Validate",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },
+          ),
+          MyListTile(
+            title: "Model Selection GridSearchCV",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },
+          ),
+          MyListTile(
+            title: "Model Selection RandomizedSearchCV",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },
+          ),
+          MyListTile(
+            title: "Pipeline",
+            onTap: () async {
+              String text = await read("statistics\\statistics.py");
+              Get.to(() => ReadCodeFromFile("Statistics Library", text));
+            },
+          ),
         ],
-      ),
-    );
-  }
-}
-
-class MyListTile extends StatelessWidget {
-  final void Function()? onTap;
-  final String? title;
-  const MyListTile({
-    super.key,
-    this.onTap,
-    this.title,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      margin: const EdgeInsets.only(bottom: 8),
-      decoration: BoxDecoration(
-        border: const GradientBoxBorder(
-          gradient: LinearGradient(
-            colors: [
-              Colors.cyan,
-              Colors.deepPurple,
-              Colors.pink,
-              Colors.redAccent,
-              // Colors.amber
-            ],
-          ),
-          width: 2,
-        ),
-        borderRadius: BorderRadius.circular(8),
-      ),
-      child: ListTile(
-        onTap: onTap,
-        title: Text(title!),
-        trailing: ShaderMask(
-          blendMode: BlendMode.srcIn,
-          shaderCallback: (Rect bounds) => const RadialGradient(
-            center: Alignment.topCenter,
-            stops: [.5, 1],
-            colors: [
-              Colors.pink,
-              Colors.yellow,
-            ],
-          ).createShader(bounds),
-          child: const Icon(
-            Icons.arrow_forward_ios_rounded,
-          ),
-        ),
       ),
     );
   }

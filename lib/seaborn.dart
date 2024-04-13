@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:gradient_borders/gradient_borders.dart';
+import 'package:get/get.dart';
+import 'functions.dart';
+import 'readcodefromfile.dart';
+import 'widgets/mylisttile.dart';
 
 class SeabornScreen extends StatelessWidget {
   const SeabornScreen({super.key});
@@ -22,93 +25,253 @@ class SeabornScreen extends StatelessWidget {
       ),
       body: ListView(
         padding: const EdgeInsets.all(8),
-        children: const [
-          MyListTile(title: "Seaborn Barplot 1"),
-          MyListTile(title: "Seaborn Barplot 2"),
-          MyListTile(title: "Seaborn Barplot 3"),
-          MyListTile(title: "Seaborn Barplot 4"),
-          MyListTile(title: "Seaborn Barplot 5"),
-          MyListTile(title: "Seaborn Barplot 6"),
-          MyListTile(title: "Seaborn Barplot 7"),
-          MyListTile(title: "Seaborn Boxplot 1  "),
-          MyListTile(title: "Seaborn Boxplot 2"),
-          MyListTile(title: "Seaborn Boxplot 3"),
-          MyListTile(title: "Seaborn Catplot Bar"),
-          MyListTile(title: "Seaborn Catplot Box"),
-          MyListTile(title: "Seaborn Catplot Count"),
-          MyListTile(title: "Seaborn Countplot 1"),
-          MyListTile(title: "Seaborn Countplot 2"),
-          MyListTile(title: "Seaborn Countplot 3"),
-          MyListTile(title: "Seaborn Data 1"),
-          MyListTile(title: "Seaborn Data 2"),
-          MyListTile(title: "Seaborn Data 3"),
-          MyListTile(title: "Seaborn Distplot"),
-          MyListTile(title: "Seaborn FacetGrid 1"),
-          MyListTile(title: "Seaborn FacetGrid 2"),
-          MyListTile(title: "Seaborn FacetGrid 3"),
-          MyListTile(title: "Seaborn FacetGrid 4"),
-          MyListTile(title: "Seaborn FacetGrid 5"),
-          MyListTile(title: "Seaborn Jointplot"),
-          MyListTile(title: "Seaborn Kdeplot 1"),
-          MyListTile(title: "Seaborn Kdeplot 2"),
-          MyListTile(title: "Seaborn Pairplot 1"),
-          MyListTile(title: "Seaborn Pairplot 2"),
-          MyListTile(title: "Seaborn Pairplot 3"),
-          MyListTile(title: "Seaborn Pairplot 4"),
-          MyListTile(title: "Seaborn Pairplot 5"),
-          MyListTile(title: "Seaborn Pairplot 6"),
-          MyListTile(title: "Seaborn Swarmplot"),
+        children: [
+          MyListTile(
+            title: "Seaborn Barplot 1",
+            onTap: () async {
+              String text = await read("seaborn\\barplot1.py");
+              Get.to(() => ReadCodeFromFile("Seaborn Barplot 1", text));
+            },
+          ),
+          MyListTile(
+            title: "Seaborn Barplot 2",
+            onTap: () async {
+              String text = await read("seaborn\\barplot2.py");
+              Get.to(() => ReadCodeFromFile("Seaborn Barplot 2", text));
+            },
+          ),
+          MyListTile(
+            title: "Seaborn Barplot 3",
+            onTap: () async {
+              String text = await read("seaborn\\barplot3.py");
+              Get.to(() => ReadCodeFromFile("Seaborn Barplot 3", text));
+            },
+          ),
+          MyListTile(
+            title: "Seaborn Barplot 4",
+            onTap: () async {
+              String text = await read("seaborn\\barplot4.py");
+              Get.to(() => ReadCodeFromFile("Seaborn Barplot 4", text));
+            },
+          ),
+          MyListTile(
+            title: "Seaborn Barplot 5",
+            onTap: () async {
+              String text = await read("seaborn\\barplot5.py");
+              Get.to(() => ReadCodeFromFile("Seaborn Barplot 5", text));
+            },
+          ),
+          MyListTile(
+            title: "Seaborn Barplot 6",
+            onTap: () async {
+              String text = await read("seaborn\\barplot6.py");
+              Get.to(() => ReadCodeFromFile("Seaborn Barplot 6", text));
+            },
+          ),
+          MyListTile(
+            title: "Seaborn Barplot 7",
+            onTap: () async {
+              String text = await read("seaborn\\barplot7.py");
+              Get.to(() => ReadCodeFromFile("Seaborn Barplot 7", text));
+            },
+          ),
+          MyListTile(
+            title: "Seaborn Boxplot 1",
+            onTap: () async {
+              String text = await read("seaborn\\boxplot1.py");
+              Get.to(() => ReadCodeFromFile("Seaborn Boxplot 1", text));
+            },
+          ),
+          MyListTile(
+            title: "Seaborn Boxplot 2",
+            onTap: () async {
+              String text = await read("seaborn\\boxplot2.py");
+              Get.to(() => ReadCodeFromFile("Seaborn Boxplot 2", text));
+            },
+          ),
+          MyListTile(
+            title: "Seaborn Boxplot 3",
+            onTap: () async {
+              String text = await read("seaborn\\boxplot3.py");
+              Get.to(() => ReadCodeFromFile("Seaborn Boxplot 3", text));
+            },
+          ),
+          MyListTile(
+            title: "Seaborn Catplot Bar",
+            onTap: () async {
+              String text = await read("seaborn\\catplotbar.py");
+              Get.to(() => ReadCodeFromFile("Seaborn Catplot Bar", text));
+            },
+          ),
+          MyListTile(
+            title: "Seaborn Catplot Box",
+            onTap: () async {
+              String text = await read("seaborn\\catplotbox.py");
+              Get.to(() => ReadCodeFromFile("Seaborn Catplot Box", text));
+            },
+          ),
+          MyListTile(
+            title: "Seaborn Catplot Count",
+            onTap: () async {
+              String text = await read("seaborn\\catplotcount.py");
+              Get.to(() => ReadCodeFromFile("Seaborn Catplot Count", text));
+            },
+          ),
+          MyListTile(
+            title: "Seaborn Countplot 1",
+            onTap: () async {
+              String text = await read("seaborn\\countplot1.py");
+              Get.to(() => ReadCodeFromFile("Seaborn Countplot 1", text));
+            },
+          ),
+          MyListTile(
+            title: "Seaborn Countplot 2",
+            onTap: () async {
+              String text = await read("seaborn\\countplot2.py");
+              Get.to(() => ReadCodeFromFile("Seaborn Countplot 2", text));
+            },
+          ),
+          MyListTile(
+            title: "Seaborn Countplot 3",
+            onTap: () async {
+              String text = await read("seaborn\\countplot3.py");
+              Get.to(() => ReadCodeFromFile("Seaborn Countplot 3", text));
+            },
+          ),
+          MyListTile(
+            title: "Seaborn Data 1",
+            onTap: () async {
+              String text = await read("seaborn\\data1.py");
+              Get.to(() => ReadCodeFromFile("Seaborn Data 1", text));
+            },
+          ),
+          MyListTile(
+            title: "Seaborn Data 2",
+            onTap: () async {
+              String text = await read("seaborn\\data2.py");
+              Get.to(() => ReadCodeFromFile("Seaborn Data 2", text));
+            },
+          ),
+          MyListTile(
+            title: "Seaborn Data 3",
+            onTap: () async {
+              String text = await read("seaborn\\data3.py");
+              Get.to(() => ReadCodeFromFile("Seaborn Data 3", text));
+            },
+          ),
+          MyListTile(
+            title: "Seaborn Distplot",
+            onTap: () async {
+              String text = await read("seaborn\\distplot.py");
+              Get.to(() => ReadCodeFromFile("Seaborn Distplot", text));
+            },
+          ),
+          MyListTile(
+            title: "Seaborn FacetGrid 1",
+            onTap: () async {
+              String text = await read("seaborn\\facetgrid1.py");
+              Get.to(() => ReadCodeFromFile("Seaborn Library", text));
+            },
+          ),
+          MyListTile(
+            title: "Seaborn FacetGrid 2",
+            onTap: () async {
+              String text = await read("seaborn\\facetgrid2.py");
+              Get.to(() => ReadCodeFromFile("Seaborn Library", text));
+            },
+          ),
+          MyListTile(
+            title: "Seaborn FacetGrid 3",
+            onTap: () async {
+              String text = await read("seaborn\\facetgrid3.py");
+              Get.to(() => ReadCodeFromFile("Seaborn Library", text));
+            },
+          ),
+          MyListTile(
+            title: "Seaborn FacetGrid 4",
+            onTap: () async {
+              String text = await read("seaborn\\facetgrid4.py");
+              Get.to(() => ReadCodeFromFile("Seaborn Library", text));
+            },
+          ),
+          MyListTile(
+            title: "Seaborn FacetGrid 5",
+            onTap: () async {
+              String text = await read("seaborn\\facetgrid5.py");
+              Get.to(() => ReadCodeFromFile("Seaborn FacetGrid 5", text));
+            },
+          ),
+          MyListTile(
+            title: "Seaborn Jointplot",
+            onTap: () async {
+              String text = await read("seaborn\\jointplot.py");
+              Get.to(() => ReadCodeFromFile("Seaborn Jointplot", text));
+            },
+          ),
+          MyListTile(
+            title: "Seaborn Kdeplot 1",
+            onTap: () async {
+              String text = await read("seaborn\\kdeplot1.py");
+              Get.to(() => ReadCodeFromFile("Seaborn Kdeplot 1", text));
+            },
+          ),
+          MyListTile(
+            title: "Seaborn Kdeplot 2",
+            onTap: () async {
+              String text = await read("seaborn\\kdeplot2.py");
+              Get.to(() => ReadCodeFromFile("Seaborn Kdeplot 2", text));
+            },
+          ),
+          MyListTile(
+            title: "Seaborn Pairplot 1",
+            onTap: () async {
+              String text = await read("seaborn\\pairplot1.py");
+              Get.to(() => ReadCodeFromFile("Seaborn Pairplot 1", text));
+            },
+          ),
+          MyListTile(
+            title: "Seaborn Pairplot 2",
+            onTap: () async {
+              String text = await read("seaborn\\pairplot2.py");
+              Get.to(() => ReadCodeFromFile("Seaborn Pairplot 2", text));
+            },
+          ),
+          MyListTile(
+            title: "Seaborn Pairplot 3",
+            onTap: () async {
+              String text = await read("seaborn\\pairplot3.py");
+              Get.to(() => ReadCodeFromFile("Seaborn Pairplot 3", text));
+            },
+          ),
+          MyListTile(
+            title: "Seaborn Pairplot 4",
+            onTap: () async {
+              String text = await read("seaborn\\pairplot4.py");
+              Get.to(() => ReadCodeFromFile("Seaborn Pairplot 4", text));
+            },
+          ),
+          MyListTile(
+            title: "Seaborn Pairplot 5",
+            onTap: () async {
+              String text = await read("seaborn\\pairplot5.py");
+              Get.to(() => ReadCodeFromFile("Seaborn Pairplot 5", text));
+            },
+          ),
+          MyListTile(
+            title: "Seaborn Pairplot 6",
+            onTap: () async {
+              String text = await read("seaborn\\pairplot6.py");
+              Get.to(() => ReadCodeFromFile("Seaborn Pairplot 6", text));
+            },
+          ),
+          MyListTile(
+            title: "Seaborn Swarmplot",
+            onTap: () async {
+              String text = await read("seaborn\\swarmplot.py");
+              Get.to(() => ReadCodeFromFile("Seaborn Swarmplot", text));
+            },
+          ),
         ],
-      ),
-    );
-  }
-}
-
-class MyListTile extends StatelessWidget {
-  final void Function()? onTap;
-  final String? title;
-  const MyListTile({
-    super.key,
-    this.onTap,
-    this.title,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      margin: const EdgeInsets.only(bottom: 8),
-      decoration: BoxDecoration(
-        border: const GradientBoxBorder(
-          gradient: LinearGradient(
-            colors: [
-              Colors.cyan,
-              Colors.deepPurple,
-              Colors.pink,
-              Colors.redAccent,
-              // Colors.amber
-            ],
-          ),
-          width: 2,
-        ),
-        borderRadius: BorderRadius.circular(8),
-      ),
-      child: ListTile(
-        onTap: onTap,
-        title: Text(title!),
-        trailing: ShaderMask(
-          blendMode: BlendMode.srcIn,
-          shaderCallback: (Rect bounds) => const RadialGradient(
-            center: Alignment.topCenter,
-            stops: [.5, 1],
-            colors: [
-              Colors.pink,
-              Colors.yellow,
-            ],
-          ).createShader(bounds),
-          child: const Icon(
-            Icons.arrow_forward_ios_rounded,
-          ),
-        ),
       ),
     );
   }

@@ -15,7 +15,6 @@ import 'package:ml_helper/sklearn.dart';
 import 'package:ml_helper/splashscreen.dart';
 import 'package:ml_helper/statistic.dart';
 import 'package:ml_helper/tensorflow.dart';
-import 'package:ml_helper/welcome_screen.dart';
 import 'package:get/get.dart';
 import 'scipy.dart';
 import 'theme/theme_service.dart';
