@@ -12,6 +12,7 @@ import 'package:ml_helper/random.dart';
 import 'package:ml_helper/regex.dart';
 import 'package:ml_helper/seaborn.dart';
 import 'package:ml_helper/sklearn.dart';
+import 'package:ml_helper/splashscreen.dart';
 import 'package:ml_helper/statistic.dart';
 import 'package:ml_helper/tensorflow.dart';
 import 'package:ml_helper/welcome_screen.dart';
@@ -34,7 +35,7 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       title: 'ML Helper',
       debugShowCheckedModeBanner: false,
-
+      initialRoute: '/splashscreen',
       theme: ThemeService().lightTheme,
       darkTheme: ThemeService().darkTheme,
       themeMode: ThemeService().getThemeMode(),
@@ -43,8 +44,9 @@ class MyApp extends StatelessWidget {
       //   colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       //   useMaterial3: true,
       // ),
-      home: WelcomeScreen(),
+      // home: WelcomeScreen(),
       getPages: [
+        GetPage(name: '/splashscreen', page: () => const SplashScreenPage()),
         GetPage(name: '/Scipy', page: () => const ScipyScreen()),
         GetPage(name: '/Matplotlib', page: () => const MatplotlibScreen()),
         GetPage(name: '/Numpy', page: () => const NumpyScreen()),

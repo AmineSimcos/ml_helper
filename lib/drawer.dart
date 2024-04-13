@@ -17,7 +17,7 @@ class MyDrawer extends StatefulWidget {
 
 class _MyDrawerState extends State<MyDrawer> {
   final MyThemeController myThemeController = Get.find<MyThemeController>();
-  final Uri _url = Uri.parse('https://flutter.dev');
+  final Uri _url = Uri.parse('https://github.com/AmineSimcos/ml_helper');
   @override
   Widget build(BuildContext context) {
     return Column(
