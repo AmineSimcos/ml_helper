@@ -2,6 +2,7 @@
 import 'package:eva_icons_flutter/eva_icons_flutter.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:ml_helper/privacy.dart';
 import 'package:ml_helper/about.dart';
 import 'package:share_plus/share_plus.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -123,6 +124,17 @@ class _MyDrawerState extends State<MyDrawer> {
                   if (result.status == ShareResultStatus.success) {
                     print('Thank you for sharing my website!');
                   }
+                },
+              ),
+              ListTile(
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(100),
+                ),
+                leading: const Icon(EvaIcons.shieldOutline),
+                title: const Text('Privacy Policy'),
+                onTap: () {
+                  Get.back();
+                  Get.to(() => const PrivacyScreen());
                 },
               ),
               ListTile(
